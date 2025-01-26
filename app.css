@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: #d0d4d5;
+    line-height: 1.6;
+}
+
+.main {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #d0d4d5;
+}
+
+.nav {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.nav-part-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav img {
+    height: 60px;
+    cursor: pointer;
+}
+
+.nav-part-1 ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-part-1 ul li {
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-part-2 {
+    display: flex;
+    align-items: center;
+}
+
+.nav-part-2 i {
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 110px);
+}
+
+.content-left {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-left h5 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.content-left h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.content-left p {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 40px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    border-top-left-radius: 0;
+    cursor: pointer;
+    align-self: center;
+}
+
+.content-right {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.content-right::-webkit-scrollbar {
+    display: none;
+}
+
+.product {
+    min-width: 250px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(17, 0, 17, 0.3);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.product img {
+    max-height: 200px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.category, .color, .price {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.foot {
+    padding: 20px;
+    text-align: center;
+}
+
+.git {
+    color: #000;
+    font-size: 20px;
+    text-decoration-line: none;
+}
+
+/* Responsive Breakpoints */
+@media screen and (min-width: 768px) {
+    
+    .content {
+        flex-direction: row;
+    }
+
+    .content-left {
+        width: 40%;
+        text-align: left;
+        padding: 80px 50px;
+    }
+
+    .content-left h1 {
+        font-size: 48px;
+    }
+
+    .content-left p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .btn {
+        align-self: flex-start;
+    }
+
+    .content-right {
+        width: 60%;
+        padding: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        flex-wrap: nowrap;
+    }
+
+
+    .nav-part-1 {
+        width: auto;
+    }
+
+    .nav img {
+        margin-right: 40px;
+    }
+
+    .content-right {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 644px) {
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-part-2 {
+        display: none;
+    }
+
+    .nav-part-1{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-part-1 ul {
+        flex-direction: column;
+    }
+
+    .nav-part-1 ul li {
+        margin: 10px 0;
+    }
+
+    .content-left h1 {
+        font-size: 32px;
+    }
+
+    .content-left p {
+        font-size: 16px;
+    }
+
+    .product {
+        min-width: 200px;
+        width: 200px;
+    }
+
+    .product img {
+        max-height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-part-2 {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-part-2 {
+        display: none; 
+    }
+}
