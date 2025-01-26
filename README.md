@@ -22,7 +22,7 @@ The **Nike Landing Page** is a fully responsive webpage designed using **HTML** 
 
 ## Screenshots
 ### Desktop View
-![Desktop View](https://github.com/addresskrish/Nike/blob/main/nike-1.png)
+![Desktop View](https://github.com/addresskrish/Nike/blob/main/images/DesktopNike.png)
 
 ## Installation
 1. Clone the repository:
