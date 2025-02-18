@@ -27,10 +27,10 @@ The **Nike Landing Page** is a fully responsive webpage designed using **HTML** 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/nike-landing-page.git
+   git clone https://github.com/yourusername/Nike.git
 2. Navigate to the project directory
    ```bash
-   cd nike-landing-page
+   cd Nike
 3. Open the index.html file in your browser.
 
 ## How to Use
